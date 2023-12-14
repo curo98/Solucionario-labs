@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Practice"
+        tools:targetApi="31" >
+        <activity
+            android:name=".EjerciciosSem13Activity"
+            android:exported="false"
+            android:parentActivityName=".MenuActivity"/>
+        <activity
+            android:name=".semana07.MultiplicacionActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem7Activity"/>
+        <activity
+            android:name=".semana07.TodoBaratoActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem7Activity"/>
+        <activity
+            android:name=".semana07.CalculoSueldo2Activity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem7Activity"/>
+        <activity
+            android:name=".semana07.CalculoSueldoActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem7Activity"/>
+        <activity
+            android:name=".semana07.CalculadoraActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem7Activity"/>
+        <activity
+            android:name=".semana07.CalculoNotasActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem7Activity"/>
+        <activity
+            android:name=".EjerciciosSem7Activity"
+            android:exported="false"
+            android:parentActivityName=".MenuActivity"/>
+        <activity
+            android:name=".semana13.ProductoCreditoActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem13Activity" />
+        <activity
+            android:name=".semana13.OperacionesAritmeticasActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem13Activity" />
+        <activity
+            android:name=".semana13.AplicacionComidaActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem13Activity" />
+        <activity
+            android:name=".semana13.CuadroDialogoActivity"
+            android:exported="false"
+            android:parentActivityName=".EjerciciosSem13Activity" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

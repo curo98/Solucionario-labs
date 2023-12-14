@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".semana13.ProductoCreditoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio"/>
+
+                <EditText
+                    android:id="@+id/edtPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese el precio del producto"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tasa Anual"/>
+
+                <EditText
+                    android:id="@+id/edtTasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese la tasa anual"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo"/>
+
+                <EditText
+                    android:id="@+id/edtTiempo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Decimales"/>
+                <CheckBox
+                    android:id="@+id/chkDecimal"
+                    android:text=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTasaMensual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tasa Mensual"/>
+
+                <TextView
+                    android:id="@+id/tvCuota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cuota Mensual"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULAR"
+                android:layout_margin="3dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

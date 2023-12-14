@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SOLUCIONARIO - LABs</string>
+
+    <string-array name="productos">
+        <item>[Seleccione]</item>
+        <item>1 Pollo a la brasa</item>
+        <item>1/2 Pollo a la brasa</item>
+        <item>1/4 Pollo a la brasa</item>
+        <item>Porcion de Anticucho</item>
+        <item>Pechuga de Pollo</item>
+    </string-array>
+
+    <string-array name="cargos">
+        <item>[Seleccione]</item>
+        <item>Analista</item>
+        <item>Programador</item>
+        <item>Técnico</item>
+        <item>Auxiliar</item>
+    </string-array>
+</resources>

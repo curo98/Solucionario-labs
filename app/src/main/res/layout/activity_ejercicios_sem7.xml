@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".EjerciciosSem7Activity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EJERCICIOS SEMANA 08"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnAppCalculoNotas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULO DE NOTAS"/>
+
+            <Button
+                android:id="@+id/btnCalculadora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULADORA"/>
+            <Button
+                android:id="@+id/btnAppCalculoSueldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULO DE SUELDO"/>
+            <Button
+                android:id="@+id/btnAppCalculoSueldo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULO DE SUELDO 2"/>
+            <Button
+                android:id="@+id/btnAppTodoBarato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TODO BARATO"/>
+
+            <Button
+                android:id="@+id/btnAppMultiplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MULTIPLICACION"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

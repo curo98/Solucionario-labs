@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".semana13.OperacionesAritmeticasActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OPERACIONES ARITMETICAS"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Numero 1"/>
+
+                <EditText
+                    android:id="@+id/edtN1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese el primer numero"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Numero 2"/>
+
+                <EditText
+                    android:id="@+id/edtN2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese el segundo numero"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resultado"/>
+
+                <TextView
+                    android:id="@+id/tvResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+                <Button
+                    android:id="@+id/btnSuma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btnResta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btnMultiplicacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btnDivision"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnlimpiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LIMPIAR"
+                android:layout_margin="3dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

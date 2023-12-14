@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".semana07.CalculadoraActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valor numero 1"/>
+
+                <EditText
+                    android:id="@+id/etVal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valor numero 2"/>
+
+                <EditText
+                    android:id="@+id/etVal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgOpe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbSum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suma"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/rbRes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resta" />
+
+                    <RadioButton
+                        android:id="@+id/rbMult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Multiplicación" />
+
+                    <RadioButton
+                        android:id="@+id/rbDiv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="División" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULAR"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

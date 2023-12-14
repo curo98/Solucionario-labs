@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".semana07.CalculoSueldoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese apellido del empleado"/>
+
+                <EditText
+                    android:id="@+id/etApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese dias trabajados"/>
+
+                <EditText
+                    android:id="@+id/etDiasTrab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese sueldo"/>
+
+                <EditText
+                    android:id="@+id/etSueldo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULAR IMPORTE"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El total del empleado es :"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
