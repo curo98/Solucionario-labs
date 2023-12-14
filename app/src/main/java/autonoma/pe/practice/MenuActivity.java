@@ -7,10 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import autonoma.pe.practice.semana13.AplicacionComidaActivity;
-import autonoma.pe.practice.semana13.CuadroDialogoActivity;
-import autonoma.pe.practice.semana13.OperacionesAritmeticasActivity;
-import autonoma.pe.practice.semana13.ProductoCreditoActivity;
+import autonoma.pe.practice.crud.PersonActivity;
 import autonoma.pe.practice.utils.ActionBarUtils;
 
 public class MenuActivity extends AppCompatActivity {
@@ -39,6 +36,15 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuActivity.this, EjerciciosSem13Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnCrud = findViewById(R.id.btnCrud);
+        btnCrud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, PersonActivity.class);
                 startActivity(intent);
             }
         });

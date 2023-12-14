@@ -41,7 +41,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SEMANA 13"/>
-
+            <Button
+                android:id="@+id/btnCrud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CRUD"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
